@@ -11,8 +11,8 @@ Openvpn : SSL 587 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
 Fail2Ban<br>
 Antitorrent<br><br>
-<p align="center"><b>Run this command</b><br><br>
+<p align="center"><big>Run this command</big><br><br>
 <br>
-<b>Debian 9 Autoscript sshvpn/openvpn-ssl</b><br>
-<b>bash -c "$(wget https://git.io/fjqbm -qO-)"</b>
+<big>Debian 9 Autoscript sshvpn/openvpn-ssl</big><br>
+<b>wget https://git.io/fjqbm && chmod +x Deb9 && ./Deb9</b>
 </p>
