@@ -10,6 +10,7 @@ Openvpn : TCP 1147 (ip/configs.zip)<br>
 Openvpn : SSL 587 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
 Fail2Ban<br>
+DDOS Deflate<br>
 Antitorrent<br><br>
 <p align="center"><big>Run this command</big><br><br>
 <br>
