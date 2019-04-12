@@ -14,5 +14,5 @@ Fail2Ban<br>
 Antitorrent<br><br>
 <b>Run this command</b><br><br>
 <br>
-<b>Debian 9 Autoscript sshvpn</b><br>
-wget https://raw.githubusercontent.com/jvb20/VPSauto/master/tool/Deb9 && chmod +x Deb9 && ./Deb9
+<b>Debian 9 Autoscript sshvpn/openvpn-ssl</b><br>
+<b>bash -c "$(wget https://git.io/fjqbm -qO-)"</b>
