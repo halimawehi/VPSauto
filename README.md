@@ -3,11 +3,11 @@ Auto SSH VPN Script<br>
 Recommended OS: Debian 9 x 64<br>
 <b>Service Include</b><br>
 Openssh : 22<br>
-Dropbear : 442 , 109<br>
+Dropbear : 442<br>
 Squid : 8080 , 3128<br>
-SSL : 443<br>
-Openvpn : TCP 1147 (ip/configs.zip)<br>
-Openvpn : SSL 587 (ip/configs.zip)<br>
+SSL : 444<br>
+Openvpn : TCP 1153 (ip/configs.zip)<br>
+Openvpn : SSL 443 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
 Fail2Ban<br>
 DDOS Deflate<br>
