@@ -6,8 +6,8 @@ Openssh : 22<br>
 Dropbear : 442 , 109<br>
 Squid : 8080 , 3128<br>
 SSL : 443<br>
-Openvpn : 1147 (ip/configs.zip)<br>
-Openvpn : 587 (ip/configs.zip)<br>
+Openvpn : TCP 1147 (ip/configs.zip)<br>
+Openvpn : SSL 587 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
 DDOS Deflate<br>
 Fail2Ban<br>
