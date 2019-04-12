@@ -12,7 +12,8 @@ Webmin : ip:10000<br>
 DDOS Deflate<br>
 Fail2Ban<br>
 Antitorrent<br><br>
-<b>Run this command</b><br><br>
+<center><b>Run this command</b><br><br>
 <br>
 <b>Debian 9 Autoscript sshvpn/openvpn-ssl</b><br>
 <b>bash -c "$(wget https://git.io/fjqbm -qO-)"</b>
+</center>
