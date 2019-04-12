@@ -10,8 +10,8 @@ Openvpn : 1147 (ip/configs.zip)<br>
 Openvpn : 587 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
 DDOS Deflate<br>
-Fail2Ban<br><br>
-Antitorrent<br>
+Fail2Ban<br>
+Antitorrent<br><br>
 <b>Run this command</b><br><br>
 <br>
 <b>Debian 9 Autoscript sshvpn</b><br>
