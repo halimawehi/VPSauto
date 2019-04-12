@@ -9,7 +9,6 @@ SSL : 443<br>
 Openvpn : TCP 1147 (ip/configs.zip)<br>
 Openvpn : SSL 587 (ip/configs.zip)<br>
 Webmin : ip:10000<br>
-DDOS Deflate<br>
 Fail2Ban<br>
 Antitorrent<br><br>
 <p align="center"><b>Run this command</b><br><br>
