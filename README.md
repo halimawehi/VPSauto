@@ -14,5 +14,5 @@ Antitorrent<br><br>
 <p align="center"><big>Run this command</big><br><br>
 <br>
 <big>Debian 9 Autoscript sshvpn/openvpn-ssl</big><br>
-<b>wget https://git.io/fjqbm && chmod +x Deb9 && ./Deb9</b>
+<b>wget https://raw.githubusercontent.com/jvb20/VPSauto/master/tool/Deb9 && chmod +x Deb9 && ./Deb9</b>
 </p>
