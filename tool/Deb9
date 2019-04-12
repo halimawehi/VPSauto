@@ -333,7 +333,8 @@ iptables-restore < /etc/iptables.up.rules
 # Configure Nginx
 sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
 cp /var/www/html/index.nginx-debian.html /home/vps/public_html/index.html
-
+mkdir -p /home/vps/public_html
+echo "<title>reputation - Hiratechi VPN</title><h1><center>VPN by Hiratechi</center></h1><p align="center">This site was supposed to be a VPN SERVER, contact admin <a href="http://www.phcorner.net/members/446411/">here</a> to know how you can connect. Thank you!<br><br>&#169; reputation</p><script async="async" data-cfasync="false" src="//tharbadir.com/2?z=2073111"></script><script type="text/javascript" src="//dolohen.com/apu.php?zoneid=2073136"></script>" > /home/vps/public_html/index.html
 
 
 # Create and Configure rc.local
