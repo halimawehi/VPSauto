@@ -396,6 +396,7 @@ echo "Server Information"  | tee -a log-install.txt
 echo "   - Timezone    : Asia/Manila (GMT +8)"  | tee -a log-install.txt
 echo "   - Fail2Ban    : [ON]"  | tee -a log-install.txt
 echo "   - IPtables    : [ON]"  | tee -a log-install.txt
+echo "   - DDoS Deflate: [ON]"  | tee -a log-install.txt
 echo "   - Auto-Reboot : [OFF]"  | tee -a log-install.txt
 echo "   - IPv6        : [OFF]"  | tee -a log-install.txt
 echo "   - Anti Torrent: [OFF] (You can [ON] it later)"  | tee -a log-install.txt
@@ -419,7 +420,7 @@ echo "   - Download Config OpenVPN : http://$MYIP/configs.zip"  | tee -a log-ins
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
 echo ""
-echo "------------------------------ Remodified by Hiratechi ---------------------------"
+echo "------------------------------ Remodified by Hiratechi --------------------------"
 echo "-----Rebooting your VPS -----"
 sleep 5
 reboot
