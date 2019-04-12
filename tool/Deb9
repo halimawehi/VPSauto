@@ -205,7 +205,7 @@ echo '<ca>' >> /home/vps/public_html/client.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/client.ovpn
 echo '</ca>' >> /home/vps/public_html/client.ovpn
 
-cat > /home/vps/public_html/OpenVPN-Stunnel.ovpn <<-END
+cat > /home/vps/public_html/clientssl.ovpn <<-END
 
 # Created by reputation aka Hiratechi
 auth-user-pass
@@ -232,9 +232,9 @@ script-security 2
 cipher none
 auth none
 END
-echo '<ca>' >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
-cat /etc/openvpn/ca.crt >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
-echo '</ca>' >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
+echo '<ca>' >> /home/vps/public_html/clientssl.ovpn
+cat /etc/openvpn/ca.crt >> /home/vps/public_html/clientssl.ovpn
+echo '</ca>' >> /home/vps/public_html/clientssl.ovpn
 
 cat > /home/vps/public_html/stunnel.conf <<-END
 
@@ -360,7 +360,7 @@ vnstat -u -i eth0
 
 # compress configs
 cd /home/vps/public_html
-zip configs.zip client.ovpn OpenVPN-Stunnel.ovpn stunnel.conf
+zip configs.zip client.ovpn clientssl stunnel.conf
 
 # install libxml-parser
 apt-get install -y libxml-parser-perl
@@ -417,7 +417,9 @@ echo "   To display list of commands: menu"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : http://$MYIP/configs.zip"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : For TCP http://$MYIP/client.ovpn"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : For SSL http://$MYIP/clientssl.ovpn"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : For Package http://$MYIP/configs.zip"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
 echo ""
