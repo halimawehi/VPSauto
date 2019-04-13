@@ -52,3 +52,17 @@ COMMIT
 END
 sed -i $MYIP2 /etc/iptables.up.rules;
 iptables-restore < /etc/iptables.up.rules
+
+#finalizing
+rm -rf switchoffat
+clear
+cd
+iptables-save
+clear
+cd
+clear
+echo "The Anti-Torrent was switched OFF successfully!"
+echo "NOTE: It's not recommended to switch off the"
+echo "anti-torrent if your VPN is running on public"
+echo " "
+echo "Go back to menu, select number 37, and then select Reboot Server to save the changes"
