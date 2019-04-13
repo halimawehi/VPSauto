@@ -6,8 +6,9 @@ Openssh : 22<br>
 Dropbear : 442<br>
 Squid : 8080 , 3128<br>
 SSL : 444<br>
-Openvpn : TCP 1153 (ip/configs.zip)<br>
-Openvpn : SSL 443 (ip/configs.zip)<br>
+Openvpn : TCP 1153 (ip/client.ovpn)<br>
+Openvpn : SSL 443 (ip/clientssl.ovpn)<br>
+OpenVpn Package (with stunnel.conf/for modem): (ip/openvpn.zip)<br>
 Webmin : ip:10000<br>
 Fail2Ban<br>
 DDOS Deflate<br>
