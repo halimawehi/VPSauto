@@ -95,18 +95,11 @@ iptables-restore < /etc/iptables.up.rules
 
 
 #clearing history
+iptables-save
 history -c
 rm -rf /root/*
 cd /root
 # info
-clear
-cd
-rm -rf turnonat
-clear
-cd
-iptables-save
-clear
-cd
 clear
 echo "The Anti-Torrent was turned ON successfully!"
 echo "Go back to menu, select number 37, and then select Reboot Server to save the changes"
