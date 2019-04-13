@@ -400,7 +400,7 @@ vnstat -u -i eth0
 
 # compress configs
 cd /home/vps/public_html
-zip configs.zip client.ovpn clientssl stunnel.conf
+zip openvpn.zip client.ovpn clientssl.ovpn stunnel.conf
 
 # install libxml-parser
 apt-get install -y libxml-parser-perl
