@@ -56,6 +56,7 @@ iptables-restore < /etc/iptables.up.rules
 
 #clearing history
 iptables-save
+exit
 history -c
 rm -rf /root/*
 cd /root
