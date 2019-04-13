@@ -60,6 +60,7 @@ rm -rf /root/*
 cd /root
 # info
 clear
+cd
 rm -rf switchoffat
 clear
 cd
