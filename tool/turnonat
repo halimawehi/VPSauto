@@ -93,7 +93,12 @@ END
 sed -i $MYIP2 /etc/iptables.up.rules;
 iptables-restore < /etc/iptables.up.rules
 
-# finalizing
+#clearing history
+history -c
+rm -rf /root/*
+cd /root
+# info
+clear
 rm -rf turnonat
 clear
 cd
