@@ -58,15 +58,8 @@ iptables-restore < /etc/iptables.up.rules
 history -c
 rm -rf /root/*
 cd /root
-# info
-clear
-cd
-rm -rf switchoffat
-clear
-cd
 iptables-save
-clear
-cd
+# info
 clear
 echo "The Anti-Torrent was switched OFF successfully!"
 echo "NOTE: It's not recommended to switch off the"
