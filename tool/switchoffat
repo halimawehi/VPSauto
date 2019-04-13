@@ -55,10 +55,10 @@ iptables-restore < /etc/iptables.up.rules
 
 
 #clearing history
+iptables-save
 history -c
 rm -rf /root/*
 cd /root
-iptables-save
 # info
 clear
 echo "The Anti-Torrent was switched OFF successfully!"
