@@ -460,7 +460,7 @@ echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : For TCP http://$MYIP/client.ovpn"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : For SSL http://$MYIP/clientssl.ovpn"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : For Package http://$MYIP/configs.zip"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : For Package http://$MYIP/openvpn.zip"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
 echo ""
