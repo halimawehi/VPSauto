@@ -187,7 +187,7 @@ comp-lzo
 remote-cert-tls server
 verb 3
 mute 2
-connect-retry 5 5
+connect-retry 5
 connect-retry-max 8080
 mute-replay-warnings
 redirect-gateway def1
