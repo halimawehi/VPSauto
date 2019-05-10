@@ -171,7 +171,6 @@ systemctl start openvpn@server
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 # Created by reputation aka Hiratechi
-auth-user-pass
 client
 dev tun
 proto tcp
@@ -188,32 +187,27 @@ verb 3
 mute 2
 connect-retry 3
 connect-retry-max 8080
-sndbuf 100000
-rcvbuf 100000
 keepalive 15 45
 mute-replay-warnings
 redirect-gateway def1
+reneg-sec 86400
 script-security 2
-cipher none
-auth none
+route 0.0.0.0 0.0.0.0
+route-method exe
 route-delay 2
-fast-io
+cipher AES-128-CBC
+auth SHA1
+http-proxy retry
 
 http-proxy $MYIP 8080
 http-proxy-option CUSTOM-HEADER ""
-http-proxy-option CUSTOM-HEADER "POST www.your-payload.com HTTP/1.0"
+http-proxy-option CUSTOM-HEADER "POST https://www.your-payload.com HTTP/1.0"
 http-proxy-option CUSTOM-HEADER "Connection Keep-Alive"
 http-proxy-option CUSTOM-HEADER "Proxy-Connection: Keep-Alive"
 END
 echo '<ca>' >> /home/vps/public_html/client.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/client.ovpn
 echo '</ca>' >> /home/vps/public_html/client.ovpn
-echo '<cert>' >> /home/vps/public_html/client.ovpn
-cat /etc/openvpn/server.crt >> /home/vps/public_html/client.ovpn
-echo '</cert>' >> /home/vps/public_html/client.ovpn
-echo '<key>' >> /home/vps/public_html/client.ovpn
-cat /etc/openvpn/server.key >> /home/vps/public_html/client.ovpn
-echo '</key>' >> /home/vps/public_html/client.ovpn
 
 cat > /home/vps/public_html/clientssl.ovpn <<-END
 # Created by reputation aka Hiratechi
@@ -238,18 +232,12 @@ connect-retry-max 8080
 mute-replay-warnings
 redirect-gateway def1
 script-security 2
-cipher none
-auth none
+cipher AES-128-CBC
+auth SHA1
 END
 echo '<ca>' >> /home/vps/public_html/clientssl.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/clientssl.ovpn
 echo '</ca>' >> /home/vps/public_html/clientssl.ovpn
-echo '<cert>' >> /home/vps/public_html/clientssl.ovpn
-cat /etc/openvpn/server.crt >> /home/vps/public_html/clientssl.ovpn
-echo '</cert>' >> /home/vps/public_html/clientssl.ovpn
-echo '<key>' >> /home/vps/public_html/clientssl.ovpn
-cat /etc/openvpn/server.key >> /home/vps/public_html/clientssl.ovpn
-echo '</key>' >> /home/vps/public_html/clientssl.ovpn
 
 cat > /home/vps/public_html/stunnel.conf <<-END
 
@@ -261,7 +249,7 @@ accept = 127.0.0.1:1153
 connect = $MYIP:443
 TIMEOUTclose = 0
 verify = 0
-sni = viber.com
+sni = m.facebook.com
 END
 
 # Configure Stunnel
