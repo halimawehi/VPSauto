@@ -67,8 +67,8 @@ http_access allow localhost
 http_access deny all
 http_port 8080
 http_port 3128
-http_port 8888 /usr/share/squid/errors/English
-error_directory
+http_port 8888
+error_directory /usr/share/squid/errors/English
 coredump_dir /var/spool/squid3
 refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
