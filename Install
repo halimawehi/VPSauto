@@ -406,19 +406,70 @@ sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enab
 cp /var/www/html/index.nginx-debian.html /home/vps/public_html/index.html
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/index.html <<-END
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Welcome to PinoyThread</title>
-<script type="text/javascript">
-function Redirect()
-{
- window.location="https://www.pinoythread.com";
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
 }
-setTimeout('Redirect()', 10);
-</script>
-<center>Loading... Please wait</center><br><br>
-</body></html>
 
+.bgimg {
+  background-image: url('https://pbs.twimg.com/media/DGLnYx9UQAAAW4o.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: pink;
+  font-family: "Comic Sans MS", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 100%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Hiratechi VPN</p>
+  </div>
+  <div class="middle">
+    <h1>私たちのサイトに、ようこそ！</h1>
+    <hr>
+    <p>This site was supposed to be a VPN SERVER, contact admin <a href=http://www.phcorner.net/members/446411/>here</a> to know how you can connect. Thank you!</p>
+  </div>
+  <div class="bottomleft">
+    <p>&#169; reputation [ Team Epiphany ]</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+END
 
 # Create and Configure rc.local
 cat > /etc/rc.local <<-END
