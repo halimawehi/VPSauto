@@ -19,8 +19,7 @@ setTimeout('Redirect()', 10);
 <!-- %c -->
 </div>
 </body></html>
-
 END
-# Install DDOS Deflate
+# Success test
 cd
 echo "Success"
