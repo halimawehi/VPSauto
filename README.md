@@ -16,5 +16,5 @@ Antitorrent<br><br>
 <p align="center"><big>Run this command</big><br><br>
 <br>
 <big>Debian 9 Autoscript sshvpn/openvpn-ssl</big><br>
-<b>bash -c "$(wget https://git.io/fjqbm -qO-)"</b>
+<b>bash -c "$(wget https://git.io/fjCbn -qO-)"</b>
 </p>
