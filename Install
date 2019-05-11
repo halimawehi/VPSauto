@@ -420,7 +420,7 @@ body, html {
   background-position: center;
   background-size: cover;
   position: relative;
-  color: pink;
+  color: #e8e4c9;
   font-family: "Comic Sans MS", Courier, monospace;
   font-size: 25px;
 }
