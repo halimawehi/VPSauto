@@ -164,9 +164,6 @@ tls-server
 ca ca.crt
 cert server.crt
 key server.key
-tls-server
-tls-version-max 1.0
-tls-cipher TLS-DHE-RSA-WITH-AES-256-CBC-SHA
 dh dh2048.pem
 verify-client-cert none
 username-as-common-name
@@ -193,7 +190,6 @@ verb 3
 ncp-disable
 cipher AES-128-CBC
 auth SHA1
-reneg-sec 60
 
 END
 systemctl start openvpn@server
