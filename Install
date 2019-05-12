@@ -795,7 +795,7 @@ cat > /home/vps/public_html/index.html <<-END
                 <div class="row d-md-flex text-white text-center wow fadeIn">
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                        <p class="lead"><a href="https://discord.gg/Rv3hyST" target="_blank">Discord</a></p>
+                        <p class="lead"><a href="https://discord.gg/Rv3hyST" target="_blank"><font color="#0000EE">Discord</font></a></p>
                     </div>
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-email-outline icon-md"></em></p>
