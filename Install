@@ -609,7 +609,7 @@ cat > /home/vps/public_html/index.html <<-END
                                 <h3 class="card-title text-primary pt-4">TCP</h3>
                                 <p class="card-text text-muted pb-3 border-bottom">Default Config</p>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>Port: 1143</li>
+                                    <li>Port: 1153</li>
                                     <li>TCP Connection</li>
                                     <li></li>
                                     <li></li>
@@ -929,6 +929,7 @@ echo "Important Information"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : For TCP http://$MYIP/client.ovpn"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : For SSL http://$MYIP/clientssl.ovpn"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : For Package http://$MYIP/openvpn.zip"  | tee -a log-install.txt
+echo "   - Your Website			   : Go to http://$MYIP/ now to see!"  | tee -a log-install.txt
 echo "   - Installation Log        : Type command log-install"  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
 echo ""
