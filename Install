@@ -842,10 +842,8 @@ END
 cd /home/vps/public_html
 wget "https://raw.githubusercontent.com/Hira20/VPSauto/master/hiratechihomepage.zip"
 unzip hiratechihomepage.zip
-cd ddos-deflate-master
-./install.sh
-cd
 rm hiratechihomepage.zip
+cd
 
 # Create and Configure rc.local
 cat > /etc/rc.local <<-END
