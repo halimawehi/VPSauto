@@ -213,7 +213,7 @@ cat > /home/vps/public_html/index.html <<-END
                                 <h3 class="card-title text-primary pt-4">TCP</h3>
                                 <p class="card-text text-muted pb-3 border-bottom">Default Config</p>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>Port: 1143</li>
+                                    <li>Port: 1153</li>
                                     <li>TCP Connection</li>
                                     <li></li>
                                     <li></li>
