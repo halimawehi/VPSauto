@@ -216,7 +216,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <li>Port: 1153</li>
                                     <li>TCP Connection</li>
                                     <li>Stable</li>
-                                    <li>Fast & Smooth</li>
+                                    <li>Fast &amp; Smooth</li>
                                 </ul>
                                 <a href="http://$MYIP/client.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
@@ -232,7 +232,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <li>Port: 443</li>
                                     <li>OpenVPN over SSL</li>
                                     <li>Stable</li>
-                                    <li>Fast & Smooth</li>
+                                    <li>Fast &amp; Smooth</li>
                                 </ul>
                                 <a href="http://$MYIP/clientssl.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
@@ -399,7 +399,7 @@ cat > /home/vps/public_html/index.html <<-END
                 <div class="row d-md-flex text-white text-center wow fadeIn">
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                        <p class="lead"><a href="https://discord.gg/Rv3hyST" target="_blank"><font color="#0000EE">Discord</font></a></p>
+                        <p class="lead"><a href="https://discord.gg/Rv3hyST" target="_blank"><blink><font color="#0000EE">Discord</font></blink></a></p>
                     </div>
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-email-outline icon-md"></em></p>
