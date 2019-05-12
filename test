@@ -215,8 +215,8 @@ cat > /home/vps/public_html/index.html <<-END
                                 <ul class="list-unstyled pricing-list">
                                     <li>Port: 1153</li>
                                     <li>TCP Connection</li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Stable</li>
+                                    <li>Fast & Smooth</li>
                                 </ul>
                                 <a href="http://$MYIP/client.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
@@ -231,8 +231,8 @@ cat > /home/vps/public_html/index.html <<-END
                                 <ul class="list-unstyled pricing-list">
                                     <li>Port: 443</li>
                                     <li>OpenVPN over SSL</li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Stable</li>
+                                    <li>Fast & Smooth</li>
                                 </ul>
                                 <a href="http://$MYIP/clientssl.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
@@ -241,12 +241,12 @@ cat > /home/vps/public_html/index.html <<-END
                     <div class="col-sm-4 mt-4 wow fadeIn">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title pt-4 text-orange">OpenVPN Package <small class="badge bg-primary small-xs">Popular</small></h5>
-                                <h3 class="card-title text-primary pt-4"><sup></sup>TCP/SSL/Modem based</h3>
+                                <h5 class="card-title pt-4 text-orange">OpenVPN Package <small class="badge bg-primary small-xs">HOT</small></h5>
+                                <h3 class="card-title text-primary pt-4"><sup></sup>Combo</h3>
                                 <p class="card-text text-muted pb-3 border-bottom">zip packed</p>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>All types of OpenVPN</li>
-                                    <li>with stunnel.conf</li>
+                                    <li>TCP &amp; SSL</li>
+                                    <li>With stunnel.conf</li>
                                     <li>For modem used</li>
                                     <li>Zip packed</li>
                                 </ul>
