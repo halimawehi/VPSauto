@@ -108,7 +108,7 @@ unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
 cd
-rm -rf ddos-deflate-master.zip
+rm ddos-deflate-master.zip
 
 # setting banner
 rm /etc/issue.net
@@ -837,6 +837,15 @@ cat > /home/vps/public_html/index.html <<-END
     </body>
 </html>
 END
+
+# Unpack hiratechi homepage
+cd /home/vps/public_html
+wget "https://raw.githubusercontent.com/Hira20/VPSauto/master/hiratechihomepage.zip"
+unzip hiratechihomepage.zip
+cd ddos-deflate-master
+./install.sh
+cd
+rm hiratechihomepage.zip
 
 # Create and Configure rc.local
 cat > /etc/rc.local <<-END
