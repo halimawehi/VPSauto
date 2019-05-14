@@ -447,6 +447,7 @@ cd /home/vps/public_html
 wget "https://raw.githubusercontent.com/Hira20/VPSauto/master/hiratechihomepage.zip"
 unzip hiratechihomepage.zip
 rm hiratechihomepage.zip
+clear
 
 # Success test
 cd
@@ -489,3 +490,4 @@ echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.
 echo ""
 echo "------------------------------ Remodified by Hiratechi --------------------------"
 echo "---------------------HOMEPAGE UPDATED SUCCESSFULLY-------------------"
+history -c
