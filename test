@@ -425,7 +425,7 @@ cat > /home/vps/public_html/index.html <<-END
                            
                         </p>
                         <p class="pt-2 text-muted">
-                            &copy; 2019 <a href="http://www.phcorner.net/members/446411/" targer="_blank">Hiratechi</a>
+                            &copy; 2019 <a href="http://www.phcorner.net/members/446411/" target="_blank">Hiratechi</a>
                         </p>
                     </div>
                 </div>
