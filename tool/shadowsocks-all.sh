@@ -1090,10 +1090,6 @@ qr_generate_python(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_python_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_python_qr.png ${plain}"
-        echo -e ""
-        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
-        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
-        sleep 30
     fi
 }
 
@@ -1108,10 +1104,6 @@ qr_generate_r(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_r_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_r_qr.png ${plain}"
-        echo -e ""
-        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
-        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
-        sleep 30
     fi
 }
 
@@ -1125,10 +1117,6 @@ qr_generate_go(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_go_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_go_qr.png ${plain}"
-        echo -e ""
-        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
-        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
-        sleep 30
     fi
 }
 
@@ -1142,10 +1130,6 @@ qr_generate_libev(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_libev_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_libev_qr.png ${plain}"
-        echo -e ""
-        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
-        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
-        sleep 30
     fi
 }
 
@@ -1177,9 +1161,14 @@ install_main(){
     fi
 
     echo
-    echo "Welcome to visit: https://www.pinoythread.com"
+    echo "Visit https://www.pinoythread.com now"
+    echo "Join our TEAM Epiphany Discord Group Chat @ https://discord.gg/Rv3hyST"
     echo "Enjoy it!"
+    echo ""
+    echo "(Taking you back in 30 seconds, pls wait...)"
+    echo "REMEMBER ALL YOUR CREDENTIALS!"
     echo
+    sleep 30
 }
 
 install_cleanup(){
@@ -1231,6 +1220,7 @@ uninstall_shadowsocks_python(){
             rm -f /usr/local/shadowsocks_python.log
         fi
         echo -e "[${green}Info${plain}] ${software[0]} uninstall success"
+        rm shadowsocks-all.sh
         sleep 10
     else
         echo
@@ -1260,6 +1250,7 @@ uninstall_shadowsocks_r(){
         rm -f /var/log/shadowsocks.log
         rm -fr /usr/local/shadowsocks
         echo -e "[${green}Info${plain}] ${software[1]} uninstall success"
+        rm shadowsocks-all.sh
         sleep 10
     else
         echo
@@ -1288,6 +1279,7 @@ uninstall_shadowsocks_go(){
         rm -f ${shadowsocks_go_init}
         rm -f /usr/bin/shadowsocks-server
         echo -e "[${green}Info${plain}] ${software[2]} uninstall success"
+        rm shadowsocks-all.sh
         sleep 10
     else
         echo
@@ -1335,6 +1327,7 @@ uninstall_shadowsocks_libev(){
         rm -fr /usr/local/share/doc/shadowsocks-libev
         rm -f ${shadowsocks_libev_init}
         echo -e "[${green}Info${plain}] ${software[3]} uninstall success"
+        rm shadowsocks-all.sh
         sleep 10
     else
         echo
