@@ -1231,10 +1231,12 @@ uninstall_shadowsocks_python(){
             rm -f /usr/local/shadowsocks_python.log
         fi
         echo -e "[${green}Info${plain}] ${software[0]} uninstall success"
+        sleep 10
     else
         echo
         echo -e "[${green}Info${plain}] ${software[0]} uninstall cancelled, nothing to do..."
         echo
+        sleep 10
     fi
 }
 
@@ -1258,10 +1260,12 @@ uninstall_shadowsocks_r(){
         rm -f /var/log/shadowsocks.log
         rm -fr /usr/local/shadowsocks
         echo -e "[${green}Info${plain}] ${software[1]} uninstall success"
+        sleep 10
     else
         echo
         echo -e "[${green}Info${plain}] ${software[1]} uninstall cancelled, nothing to do..."
         echo
+        sleep 10
     fi
 }
 
@@ -1284,10 +1288,12 @@ uninstall_shadowsocks_go(){
         rm -f ${shadowsocks_go_init}
         rm -f /usr/bin/shadowsocks-server
         echo -e "[${green}Info${plain}] ${software[2]} uninstall success"
+        sleep 10
     else
         echo
         echo -e "[${green}Info${plain}] ${software[2]} uninstall cancelled, nothing to do..."
         echo
+        sleep 10
     fi
 }
 
@@ -1329,10 +1335,12 @@ uninstall_shadowsocks_libev(){
         rm -fr /usr/local/share/doc/shadowsocks-libev
         rm -f ${shadowsocks_libev_init}
         echo -e "[${green}Info${plain}] ${software[3]} uninstall success"
+        sleep 10
     else
         echo
         echo -e "[${green}Info${plain}] ${software[3]} uninstall cancelled, nothing to do..."
         echo
+        sleep 10
     fi
 }
 
@@ -1364,6 +1372,7 @@ uninstall_shadowsocks(){
         else
             echo -e "[${red}Error${plain}] ${software[${un_select}-1]} not installed, please check it and try again."
             echo
+            sleep 5
             exit 1
         fi
     elif [ "${un_select}" == "2" ]; then
@@ -1372,6 +1381,7 @@ uninstall_shadowsocks(){
         else
             echo -e "[${red}Error${plain}] ${software[${un_select}-1]} not installed, please check it and try again."
             echo
+            sleep 5
             exit 1
         fi
     elif [ "${un_select}" == "3" ]; then
@@ -1380,6 +1390,7 @@ uninstall_shadowsocks(){
         else
             echo -e "[${red}Error${plain}] ${software[${un_select}-1]} not installed, please check it and try again."
             echo
+            sleep 5
             exit 1
         fi
     elif [ "${un_select}" == "4" ]; then
@@ -1388,6 +1399,7 @@ uninstall_shadowsocks(){
         else
             echo -e "[${red}Error${plain}] ${software[${un_select}-1]} not installed, please check it and try again."
             echo
+            sleep 5
             exit 1
         fi
     fi
