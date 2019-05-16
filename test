@@ -270,6 +270,7 @@ cat > /home/vps/public_html/index.html <<-END
                         <p class="mt-5">
                             RADZ VPN<br><a href="https://play.google.com/store/apps/details?id=www.radzvpn.ml" class="mr-2" target="_blank"><img src="img/google-play.png" class="store-img"/></a><br>
                             WENZ VPN<br><a href="https://play.google.com/store/apps/details?id=wenz.soft.dev.wenzvpn" class="mr-2" target="_blank"><img src="img/google-play.png" class="store-img"/></a><br>
+                            Configs PH<br><a href="https://play.google.com/store/apps/details?id=fb.com.nicanor03" class="mr-2" target="_blank"><img src="img/google-play.png" class="store-img"/></a><br>
 							<br>FOR PC<br><a href="https://www.phcorner.net/threads/685100/" target="_blank">Uni OVPN (&#169; JustPlaying)</a>
                         </p>
                     </div>
