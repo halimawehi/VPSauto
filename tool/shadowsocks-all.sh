@@ -1090,6 +1090,9 @@ qr_generate_python(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_python_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_python_qr.png ${plain}"
+        echo -e ""
+        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
+        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
         sleep 30
     fi
 }
@@ -1105,6 +1108,9 @@ qr_generate_r(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_r_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_r_qr.png ${plain}"
+        echo -e ""
+        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
+        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
         sleep 30
     fi
 }
@@ -1119,6 +1125,9 @@ qr_generate_go(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_go_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_go_qr.png ${plain}"
+        echo -e ""
+        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
+        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
         sleep 30
     fi
 }
@@ -1133,6 +1142,9 @@ qr_generate_libev(){
         echo -n "${qr_code}" | qrencode -s8 -o ${cur_dir}/shadowsocks_libev_qr.png
         echo "Your QR Code has been saved as a PNG file path:"
         echo -e "${green} ${cur_dir}/shadowsocks_libev_qr.png ${plain}"
+        echo -e ""
+        echo -e "(Going back to Hiratechi's Menu after 30 seconds...)"
+        echo -e "REMEMBER ALL YOUR CREDENTIALS!"
         sleep 30
     fi
 }
