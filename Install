@@ -163,7 +163,6 @@ cat > /etc/openvpn/server.conf <<-END
 port 1153
 proto tcp
 dev tun
-tls-server
 ca ca.crt
 cert server.crt
 key server.key
