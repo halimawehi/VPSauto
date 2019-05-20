@@ -6,7 +6,7 @@ echo "deb http://build.openvpn.net/debian/openvpn/release/2.4 stretch main" > /e
 #Requirement
 apt update
 apt upgrade -y
-apt install openvpn nginx php7.0-fpm stunnel4 dropbear easy-rsa vnstat ufw build-essential fail2ban zip -y
+apt install openvpn nginx php7.0-fpm stunnel4 dropbear squid3 easy-rsa vnstat ufw build-essential fail2ban zip -y
 
 # install unzip
 apt-get install unzip
