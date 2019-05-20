@@ -1,5 +1,9 @@
 #!/bin/bash
+echo "Loading, please wait..."
 service squid stop
+sleep 15
+clear
+echo "Starting to install..."
 while [[ ! $sqx =~ Y|y|N|n ]]; do
 	read -p "Allow anyone to use your Squid? : [Y/y] [N/n] " sqx;done
 if [[ ! `which docker` ]]; then
@@ -26,10 +30,6 @@ wget $GITMINE/docker.yaml -qO- | docker stack up -c - dnsx
 docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
 
 #finalizing
-echo "Smart Squid Installed successfully"
-echo "Rebooting your server..."
-sleep 5
-history -c
 sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
 vnstat -u -i eth0
 apt-get -y autoremove
@@ -41,4 +41,9 @@ service openvpn restart
 service dropbear restart
 service fail2ban restart
 service squid restart
+clear
+history -c
+echo "Smart Squid Installed successfully"
+echo "Rebooting your server..."
+sleep 5
 sudo reboot
