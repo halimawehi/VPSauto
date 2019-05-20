@@ -23,3 +23,21 @@ wget $GITMINE/dnsmasq.conf -qO $CONFDIR/dnsmasq.conf
 wget $GITMINE/squid.conf -qO $CONFDIR/squid.conf
 wget $GITMINE/docker.yaml -qO- | docker stack up -c - dnsx
 docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
+
+#finalizing
+echo "Smart Squid Installed successfully"
+echo "Rebooting your server..."
+sleep 5
+history -c
+sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
+vnstat -u -i eth0
+apt-get -y autoremove
+chown -R www-data:www-data /home/vps/public_html
+service nginx start
+service php7.0-fpm start
+service vnstat restart
+service openvpn restart
+service dropbear restart
+service fail2ban restart
+service squid restart
+sudo reboot
