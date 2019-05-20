@@ -1,4 +1,5 @@
 #!/bin/bash
+service squid stop
 while [[ ! $sqx =~ Y|y|N|n ]]; do
 	read -p "Allow anyone to use your Squid? : [Y/y] [N/n] " sqx;done
 if [[ ! `which docker` ]]; then
