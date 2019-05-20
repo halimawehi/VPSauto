@@ -37,7 +37,7 @@ services:
   cap_add: 
    - NET_ADMIN
   ports: 
-   - "80:80"
+   - "8888:8888"
    - "443:443"
   volumes: 
    - /etc/_configs/sniproxy.conf:/etc/sniproxy.conf
