@@ -472,8 +472,6 @@ END
 clear
 
 # finalizing
-vnstat -u -i eth0
-apt-get -y autoremove
 chown -R www-data:www-data /home/vps/public_html
 service php7.0-fpm start
 service vnstat restart
