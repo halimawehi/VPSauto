@@ -481,6 +481,7 @@ service openvpn restart
 service dropbear restart
 service fail2ban restart
 service squid restart
+service nginx restart
 clear
 history -c
 echo "Smart Squid Installed successfully"
