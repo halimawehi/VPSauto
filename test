@@ -3,9 +3,11 @@
 # initializing var
 MYIP=`ifconfig eth0 | awk 'NR==2 {print $2}'`
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-cd /root
 
 # Update Home Page
+sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
+cp /var/www/html/index.nginx-debian.html /home/vps/public_html/index.html
+mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/index.html <<-END
 <!DOCTYPE html>
 <html lang="en">
