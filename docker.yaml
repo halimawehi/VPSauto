@@ -1,0 +1,44 @@
+version: "3.7"
+services: 
+ squidx-serv: 
+  image: xdcb/smart-bypass:squidX
+  container_name: squidX
+  privileged: true
+  network_mode: host
+  cap_add: 
+   - NET_ADMIN
+  ports: 
+   - "8888:8888"
+   - "8080:8080"
+   - "8000:8000"
+   - "3128:3128"
+  volumes: 
+   - /etc/_configs/squid.conf:/etc/squid/squid.conf:consistent
+  
+ dnsmasq-service: 
+  image: xdcb/smart-bypass:dnsX
+  container_name: dnsx
+  privileged: true
+  network_mode: host
+  cap_add: 
+   - NET_ADMIN
+  volumes: 
+   - /etc/_configs/dnsmasq.conf:/etc/dnsmasq.conf
+   - /etc/_configs/dns-sni.conf:/etc/dnsmasq.d/dns-sni.conf:consistent
+  ports: 
+   - "53:53"
+   - "53:53/udp"
+
+ sniproxy-serv: 
+  image: ab77/sniproxy:latest
+  container_name: sniproxy
+  privileged: true
+  network_mode: host
+  cap_add: 
+   - NET_ADMIN
+  ports: 
+   - "80:80"
+   - "443:443"
+  volumes: 
+   - /etc/_configs/sniproxy.conf:/etc/sniproxy.conf
+  restart: always
