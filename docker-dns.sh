@@ -21,7 +21,7 @@ GITMINE="https://raw.githubusercontent.com/Hira20/VPSauto/master"
 docker service ls 2> $DNUL || docker swarm init --advertise-addr $IP
 docker stack rm dnsx 2> $DNUL
 wget \
-https://raw.githubusercontent.com/Hira20/VPSauto/master/sniproxy.conf.template \
+https://raw.githubusercontent.com/Hira20/netflix-proxy/master/docker-sniproxy/sniproxy.conf.template \
 -qO $CONFDIR/sniproxy.conf
 wget $GITMINE/sni-dns.conf -qO $CONFDIR/sni-dns.conf
 wget $GITMINE/dnsmasq.conf -qO $CONFDIR/dnsmasq.conf
