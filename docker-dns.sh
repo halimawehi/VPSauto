@@ -1,6 +1,6 @@
 #!/bin/bash
 while [[ ! $sqx =~ Y|y|N|n ]]; do
-	read -p "Shareable RP: [Y/y] [N/n] " sqx;done
+	read -p "Allow anyone to use your Squid? : [Y/y] [N/n] " sqx;done
 if [[ ! `which docker` ]]; then
 apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
