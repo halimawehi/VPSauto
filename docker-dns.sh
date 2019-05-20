@@ -1,8 +1,7 @@
 #!/bin/bash
-
 echo "Loading, please wait..."
 service squid stop
-sleep 5
+sleep 15
 clear
 echo "Starting to install..."
 while [[ ! $sqx =~ Y|y|N|n ]]; do
@@ -31,6 +30,7 @@ wget $GITMINE/docker.yaml -qO- | docker stack up -c - dnsx
 docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
 
 # Configure Nginx
+service nginx restart
 sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
 cp /var/www/html/index.nginx-debian.html /home/vps/public_html/index.html
 mkdir -p /home/vps/public_html
