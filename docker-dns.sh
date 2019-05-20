@@ -30,7 +30,6 @@ wget $GITMINE/docker.yaml -qO- | docker stack up -c - dnsx
 docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
 
 # Configure Nginx
-service nginx restart
 sed -i 's/\/var\/www\/html;/\/home\/vps\/public_html\/;/g' /etc/nginx/sites-enabled/default
 cp /var/www/html/index.nginx-debian.html /home/vps/public_html/index.html
 mkdir -p /home/vps/public_html
@@ -476,7 +475,6 @@ clear
 vnstat -u -i eth0
 apt-get -y autoremove
 chown -R www-data:www-data /home/vps/public_html
-service nginx start
 service php7.0-fpm start
 service vnstat restart
 service openvpn restart
