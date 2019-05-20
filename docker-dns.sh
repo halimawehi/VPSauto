@@ -246,7 +246,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <li>Stable</li>
                                     <li>Fast &amp; Smooth</li>
                                 </ul>
-                                <a href="http://$MYIP/client.ovpn" class="btn btn-primary btn-radius">Download</a>
+                                <a href="http://$IP/client.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <li>Stable</li>
                                     <li>Fast &amp; Smooth</li>
                                 </ul>
-                                <a href="http://$MYIP/clientssl.ovpn" class="btn btn-primary btn-radius">Download</a>
+                                <a href="http://$IP/clientssl.ovpn" class="btn btn-primary btn-radius">Download</a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <li>For modem used</li>
                                     <li>Zip packed</li>
                                 </ul>
-                                <a href="http://$MYIP/openvpn.zip" class="btn btn-primary btn-radius">Download</a>
+                                <a href="http://$IP/openvpn.zip" class="btn btn-primary btn-radius">Download</a>
                             </div>
                         </div>
                     </div>
