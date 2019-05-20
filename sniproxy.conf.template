@@ -1,7 +1,7 @@
 user daemon
 pidfile /var/tmp/sniproxy.pid
 
-listener 80 {
+listener 8888 {
     proto http
 }
 
