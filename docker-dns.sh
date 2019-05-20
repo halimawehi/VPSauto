@@ -2,6 +2,7 @@
 
 echo "Loading, please wait..."
 service squid stop
+sleep 5
 clear
 echo "Starting to install..."
 while [[ ! $sqx =~ Y|y|N|n ]]; do
