@@ -47,9 +47,6 @@ clear
 echo "Restarting your Squid ..."
 sleep 2
 clear
-echo "Restarting your Squid ..."
-sleep 2
-clear
 echo "Restarting your Squid ...."
 sleep 2
 clear
@@ -59,3 +56,4 @@ clear
 echo "Restarting your Squid ..... OK!"
 sleep 2
 clear
+docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
