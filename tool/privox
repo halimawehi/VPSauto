@@ -69,30 +69,35 @@ echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "Rebooting your server in 5"
 echo "Don't touch anything...!"
+echo "(If your squid do not start after reboot type service squid restart)"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "Rebooting your server in 4"
 echo "Don't touch anything...!"
+echo "(If your squid do not start after reboot type service squid restart)"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "Rebooting your server in 3"
 echo "Don't touch anything...!"
+echo "(If your squid do not start after reboot type service squid restart)"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "Rebooting your server in 2"
 echo "Don't touch anything...!"
+echo "(If your squid do not start after reboot type service squid restart)"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "Rebooting your server in 1"
 echo "Don't touch anything...!"
+echo "(If your squid do not start after reboot type service squid restart)"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
