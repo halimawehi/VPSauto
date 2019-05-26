@@ -228,12 +228,21 @@ route-delay 2
 auth-user-pass
 cipher none
 auth none
+
 http-proxy-retry
 http-proxy $MYIP 8080
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://viber.com HTTP/1.0"
 http-proxy-option CUSTOM-HEADER "Connection: Keep-Alive"
 http-proxy-option CUSTOM-HEADER "Proxy-Connection: Keep-Alive"
+
+## Uncomment below if you like to do auto-login in mobile
+#<auth-user-pass>
+#your_username
+#your_password
+#</auth-user-pass>
+
+
 END
 echo '<ca>' >> /home/vps/public_html/client.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/client.ovpn
@@ -243,7 +252,6 @@ cat > /home/vps/public_html/clientssl.ovpn <<-END
 # Created by reputation aka Hiratechi
 # TEAM Epiphany | www.pinoythread.com
 # Discord : https://discord.gg/Rv3hyST
-auth-user-pass
 client
 dev tun
 proto tcp
@@ -264,8 +272,16 @@ connect-retry-max 8080
 mute-replay-warnings
 redirect-gateway def1
 script-security 2
+auth-user-pass
 cipher none
 auth none
+
+## Uncomment below if you like to do auto-login in mobile
+#<auth-user-pass>
+#your_username
+#your_password
+#</auth-user-pass>
+
 END
 echo '<ca>' >> /home/vps/public_html/clientssl.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/clientssl.ovpn
