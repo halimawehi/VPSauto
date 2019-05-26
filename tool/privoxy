@@ -73,26 +73,30 @@ sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
-echo "Starting Privoxy 3"
+echo "Starting Privoxy in 3"
 echo "Don't touch anything...!"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
-echo "Rebooting your server in 2"
+echo "Starting Privoxy in 2"
 echo "Don't touch anything...!"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
-echo "Starting Privoxy 1"
+echo "Starting Privoxy in 1"
 echo "Don't touch anything...!"
 sleep 1
 clear
 echo "=======================PRIVOXY SETUP======================="
 echo ""
 echo "PRIVOXY IS NOW RUNNING!"
+echo ""
 echo "Use port 8020 for your OpenVPN"
+echo ""
 echo "Use port 3128 8000 8080 8888 for your other services"
+echo ""
+echo "Going back after 10 seconds"
 service privoxy restart
 sleep 5
