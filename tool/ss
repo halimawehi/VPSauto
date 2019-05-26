@@ -33,3 +33,24 @@ wget $GITMINE/sni-dns.conf -qO $CONFDIR/sni-dns.conf
 service squid stop 2> $DNUL
 wget $GITMINE/docker.yaml -qO- | docker stack up -c - dnsx
 docker service update $(docker service ls | grep squid | cut -d ' ' -f 1) --args $sqx
+sleep 5
+clear
+echo "Smart Squid successfully installed!"
+sleep 2
+clear
+service squid restart
+echo "Restarting your Squid ."
+sleep 2
+echo "Restarting your Squid .."
+sleep 2
+echo "Restarting your Squid ..."
+sleep 2
+echo "Restarting your Squid ..."
+sleep 2
+echo "Restarting your Squid ...."
+sleep 2
+echo "Restarting your Squid ....."
+sleep 2
+echo "Restarting your Squid ..... OK!"
+sleep 2
+clear
