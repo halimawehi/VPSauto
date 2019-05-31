@@ -844,6 +844,9 @@ cat > /home/vps/public_html/index.html <<-END
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
                         <h1>HIRATECHI VPN</h1>
+			<br>
+			<iframe src="https://discordapp.com/widget?id=499555022078607360&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+			<br>
                         <p class="mt-4">
                             <a href="https://discord.gg/Rv3hyST" target="_blank"><img src="img/discord.png" alt="Our Discord server"/></a>   
                             <a href="https://www.facebook.com/RADZ-VPN-260317881583057" target="_blank"><img src="img/facebook.png" alt="Our Facebook"/></a>
