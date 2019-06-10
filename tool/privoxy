@@ -10,6 +10,7 @@ echo ""
 echo "Welcome to Privoxy Installation!"
 echo "      - Hiratechi"
 sleep 3
+rm /etc/privoxy/config
 clear
 
 # installation
@@ -94,5 +95,4 @@ echo "Use port 3128 8000 8080 8888 for your other services"
 echo ""
 echo "Going back after 10 seconds"
 service privoxy restart
-service squid restart
 sleep 5
