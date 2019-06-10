@@ -729,12 +729,12 @@ cat > /home/vps/public_html/index.html <<-END
                         <p>Our Official Group Name</p>
                     </div>
                     <div class="team col-sm-3 mt-2 wow fadeIn">
-                        <img src="img/team-3.jpg" alt="Team RADZVPN" class="img-team img-fluid rounded-circle"/>
+                        <img src="img/team-3.gif" alt="Team RADZVPN" class="img-team img-fluid rounded-circle"/>
                         <h5>RADZVPN TEAM</h5>
                         <p>Partner Team</p>
                     </div>
                     <div class="team col-sm-3 mt-2 wow fadeInRight">
-                        <img src="img/team-4.jpg" alt="Team Unstoppable" class="img-team img-fluid rounded-circle"/>
+                        <img src="img/team-4.png" alt="Team Unstoppable" class="img-team img-fluid rounded-circle"/>
                         <h5>Team Unstoppable</h5>
                         <p>Partner Team</p>
                     </div>
