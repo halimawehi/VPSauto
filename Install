@@ -93,7 +93,7 @@ cat > /usr/share/squid-langpack/en/ERR_INVALID_URL <<-END
 <script type="text/javascript">
 function Redirect()
 {
- window.location="https://discord.gg/bC6bfwK";
+ window.location="https://discord.gg/EHq4XjH";
 }
 setTimeout('Redirect()', 60);
 </script>
@@ -802,7 +802,7 @@ cat > /home/vps/public_html/index.html <<-END
                                     <em class="ion-ios-person-outline"></em> &nbsp;&nbsp;
                                     <em class="ion-ios-time-outline"></em>
                                 </p>
-                                <h5 class="card-title"><a href="https://discord.gg/Rv3hyST" target="_blank">The TEAM Epiphany</a></h5>
+                                <h5 class="card-title"><a href="https://discord.gg/EHq4XjH" target="_blank">The TEAM Epiphany</a></h5>
                                 <p class="card-text"><b>TEAM Epiphany<b> is now live on Discord with...<br>
 								VPN Scripts<br>
 								Daily Giveaways<br>
@@ -814,7 +814,7 @@ cat > /home/vps/public_html/index.html <<-END
 								that you can't find here!</p>
                             </div>
                             <div class="card-body text-right">
-                                <a href="https://discord.gg/bC6bfwK" class="card-link" target="_blank"><strong>Connect to them</strong></a>
+                                <a href="https://discord.gg/EHq4XjH" class="card-link" target="_blank"><strong>Connect to them</strong></a>
                             </div>
                         </div>
                     </div>
@@ -852,7 +852,7 @@ cat > /home/vps/public_html/index.html <<-END
 			<iframe src="https://discordapp.com/widget?id=499555022078607360&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 			<br>
                         <p class="mt-4">
-                            <a href="https://discord.gg/Rv3hyST" target="_blank"><img src="img/discord.png" alt="Our Discord server"/></a>   
+                            <a href="https://discord.gg/EHq4XjH" target="_blank"><img src="img/discord.png" alt="Our Discord server"/></a>   
                             <a href="https://www.facebook.com/RADZ-VPN-260317881583057" target="_blank"><img src="img/facebook.png" alt="Our Facebook"/></a>
                            
                         </p>
