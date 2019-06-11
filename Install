@@ -93,7 +93,7 @@ cat > /usr/share/squid-langpack/en/ERR_INVALID_URL <<-END
 <script type="text/javascript">
 function Redirect()
 {
- window.location="https://discord.gg/Rv3hyST";
+ window.location="https://discord.gg/bC6bfwK";
 }
 setTimeout('Redirect()', 60);
 </script>
@@ -135,9 +135,9 @@ sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="PH"|' /etc/openvpn/easy-rs
 sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="MANILA"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="METRO MANILA"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="TEAM_EPIPHANY"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="HIRATECHI_AKA_REPUTATION@TEAM_EPIPHANY"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="HIRATECHI@TEAM-EPIPHANY.COM"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="STRICTLY_NO_TORRENT_ALLOWED_IN_THIS_SERVER"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="HIRATECHI aka REPUTATION"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="HIRATECHI"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_OU=changeme|export KEY_OU=STRICTLY_NO_TORRENT_ALLOWED_IN_THIS_SERVER|' /etc/openvpn/easy-rsa/vars
 #Create Diffie-Helman Pem
 openssl dhparam -out /etc/openvpn/dh2048.pem 2048
@@ -575,7 +575,7 @@ cat > /home/vps/public_html/index.html <<-END
                                 </div>
                                 <h6>Highly Secure</h6>
                                 <p>
-                                    Our server is from Digital Ocean, with anti-torrent & anti-ddos installed for our servers go for a longer last. 
+                                    Our server is from best VPS Cloud service, with anti-torrent & anti-ddos installed for our servers go for a longer last. 
                                 </p>
                             </div>
                         </div>
@@ -814,7 +814,7 @@ cat > /home/vps/public_html/index.html <<-END
 								that you can't find here!</p>
                             </div>
                             <div class="card-body text-right">
-                                <a href="https://discord.gg/Rv3hyST" class="card-link" target="_blank"><strong>Connect to them</strong></a>
+                                <a href="https://discord.gg/bC6bfwK" class="card-link" target="_blank"><strong>Connect to them</strong></a>
                             </div>
                         </div>
                     </div>
@@ -828,7 +828,7 @@ cat > /home/vps/public_html/index.html <<-END
                 <div class="row d-md-flex text-white text-center wow fadeIn">
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                        <p class="lead"><a href="https://discord.gg/Rv3hyST" target="_blank"><font color="#0000EE">Discord</font></a></p>
+                        <p class="lead"><a href="https://discord.gg/bC6bfwK" target="_blank"><font color="#0000EE">Discord</font></a></p>
                     </div>
                     <div class="col-sm-4 p-5">
                         <p><em class="ion-ios-email-outline icon-md"></em></p>
